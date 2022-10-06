@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Silkscreen&display=swap');
+
+* {
+    margin: 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    background-color: #100C31;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+    width: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Logo-container {
+    margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.Home-content-container h1 {
+    color: #CC2D42;
+    text-shadow: 3px -8px #11167B;
+    font-size: 30pt;
+    font-family: 'Silkscreen', cursive;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 70%;
+    margin-right: 35%;
+}
+
+.Separator {
+    background-color: #393555;
+    height: 1px;
+    width: 140px;
+    margin-left: 5px;
+}
+
+.Home-list {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0px;
+    margin-left: 5px;
+}
+
+.Home-list li {
+    margin-bottom: 25px;
+}
+
+.Home-list a {
+    color: #9e9e9e;
+    font-size: 15pt;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 0px;
+    transition: ease-in 250ms, Item-slide-left 250ms;
+}
+
+.Home-list a:hover {
+    color: #B2C93E;
+    font-size: 15pt;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 15px;
+    transition: ease-in 250ms, Item-slide-right 250ms;
+}
+
+.Socials-container {
+    width: 80%;
+    height: 40px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.Socials-container a {
+    transition: color 250ms;
+    color: #393555;
+    font-size: 25pt;
+    margin-right: 25px;
+}
+
+.Socials-container a:hover {
+    transition: color 250ms;
+    color: #938fad;
+    font-size: 25pt;
+    margin-right: 25px;
+}
+
+@keyframes Item-slide-right {
+    0% {
+        padding-left: 0px;
+    }
+
+    100% {
+        padding-right: 15px;
+    }
+}
+
+@keyframes Item-slide-left {
+    0% {
+        padding-left: 15px;
+    }
+
+    100% {
+        padding-right: 0px;
+    }
 }
