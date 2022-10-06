@@ -36,16 +36,16 @@ function App() {
                     </li>
                 </ul>
                 <div className={"Socials-container"}>
-                    <a href={"#"}>
+                    <a href={"https://www.instagram.com/cingano.lorenzo/"}>
                         <FaInstagram/>
                     </a>
-                    <a href={"#"}>
+                    <a href={"https://t.me/whoslore"}>
                         <FaTelegram/>
                     </a>
                     <a href={"#"}>
                         <FaWhatsapp/>
                     </a>
-                    <a href={"#"}>
+                    <a href={"https://github.com/lorenzocingano02"}>
                         <FaGithub/>
                     </a>
                 </div>
